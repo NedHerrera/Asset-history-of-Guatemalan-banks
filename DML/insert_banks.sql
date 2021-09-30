@@ -14,4 +14,4 @@ insert into bank (bank_name) values ('AGROMERCANTIL DE GUATEMALA, S. A.');
 insert into bank (bank_name) values ('G&T CONTINENTAL, S. A.');
 insert into bank (bank_name) values ('AZTECA DE GUATEMALA, S. A.');
 insert into bank (bank_name) values ('INV, S. A.');
-
+insert into bank (bank_name) values ('CREDICORP, S. A.');
