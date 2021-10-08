@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS active (
     active_month int NOT NULL,
     active_count int null,
     bank_id int,
+    register_year int,
     FOREIGN KEY (bank_id) REFERENCES bank (bank_id)
 )  ENGINE=INNODB;
 
@@ -19,6 +20,7 @@ CREATE TABLE IF NOT EXISTS pasive (
     pasive_month int NOT NULL,
     pasive_count int null,
     bank_id int,
+    register_year int,
     FOREIGN KEY (bank_id) REFERENCES bank (bank_id)
 )  ENGINE=INNODB;
 
@@ -27,5 +29,6 @@ CREATE TABLE IF NOT EXISTS patrimonio (
     patrimonio_month int NOT NULL,
     patrimonio_count int null,
     bank_id int,
+    register_year int,
     FOREIGN KEY (bank_id) REFERENCES bank (bank_id)
 )  ENGINE=INNODB;
