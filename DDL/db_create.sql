@@ -1,4 +1,4 @@
--- database create Bases2_ProyectoClase;
+-- create database Bases2_ProyectoClase;
 use Bases2_ProyectoClase;
 
 CREATE TABLE IF NOT EXISTS bank (
