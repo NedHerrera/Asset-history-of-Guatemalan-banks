@@ -35,4 +35,15 @@ router.get("/get-allbanks", (request, response, next) => {
 });
 
 
+router.get("/getActivesTotalHistory", (request, response, next) => {
+    connection.query('select * from bank', (error, rows) => {
+        if (error) {
+            console.log(error);
+            return
+        }
+        response.json(rows);
+    });
+});
+
+
 module.exports = router;
