@@ -1,0 +1,4 @@
+sudo docker exec -i mysql57 sh -c 'exec mysql -uroot -ppassword' < "insert_banks.sql" 
+sudo docker exec -i mysql57 sh -c 'exec mysql -uroot -ppassword' < "insert_actives.sql" 
+sudo docker exec -i mysql57 sh -c 'exec mysql -uroot -ppassword' < "insert_pasive.sql" 
+sudo docker exec -i mysql57 sh -c 'exec mysql -uroot -ppassword' < "insert_patrimonio.sql" 

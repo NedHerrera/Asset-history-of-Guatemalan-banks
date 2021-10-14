@@ -32,3 +32,11 @@ CREATE TABLE IF NOT EXISTS patrimonios (
     register_year int,
     FOREIGN KEY (bank_id) REFERENCES banks (bank_id)
 )  ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(1000) NOT NULL,
+    password VARCHAR(1000) NOT NULL,
+    firstname VARCHAR(1000) NOT NULL,
+    lastname VARCHAR(1000) NOT NULL
+)  ENGINE=INNODB;

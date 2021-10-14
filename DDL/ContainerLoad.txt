@@ -1,0 +1,1 @@
+sudo docker exec -i mysql57 sh -c 'exec mysql -uroot -ppassword' < "db_create.sql" 
