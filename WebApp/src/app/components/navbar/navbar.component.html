@@ -1,0 +1,32 @@
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a routerLink="/" class="navbar-brand"> <i class="fas fa-database"></i> BD2 </a>
+      
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+         
+          <li id="iniciarSesion" class="nav-item" [hidden]="iniciarSesion">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active" >Iniciar Sesion</a>
+          </li>
+          <li id="registrarse" class="nav-item" [hidden]="registrarse">
+            <a class="nav-link" routerLink="/registrarCliente" routerLinkActive="active">Registrarse</a>
+          </li>
+          <li id="solicitudes" class="nav-item" [hidden]="ranking">
+            <a class="nav-link" routerLink="/rank" routerLinkActive="active"><i class="fas fa-clipboard"></i> Ranking Bancario </a>
+          </li>
+          <li id="bitacora" class="nav-item" [hidden]="grafico">
+            <a class="nav-link" routerLink="/grafico" routerLinkActive="active"><i class="fas fa-file-alt"></i> Grafico Ranking Bancario </a>
+          </li>
+          <li id="cerrarSesion" class="nav-item" [hidden]="cerrar">
+            <a class="nav-link" (click)='cerrarSesion()' routerLinkActive="active">Exit</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </div>
