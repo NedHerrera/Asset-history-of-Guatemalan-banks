@@ -11,11 +11,11 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   registrarUsuario(user: any){
-    return this.http.post(`${this.url}`, user);
+    return this.http.post(`${this.url}/newUser`, user);
   }
 
   login(user: any){
-    return this.http.post(`${this.url}`, user);
+    return this.http.post(`${this.url}/login`, user);
   }
-  
+
 }
