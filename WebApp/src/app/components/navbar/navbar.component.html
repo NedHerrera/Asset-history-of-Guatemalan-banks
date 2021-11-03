@@ -14,13 +14,16 @@
             <a class="nav-link" routerLink="/login" routerLinkActive="active" >Iniciar Sesion</a>
           </li>
           <li id="registrarse" class="nav-item" [hidden]="registrarse">
-            <a class="nav-link" routerLink="/registrarCliente" routerLinkActive="active">Registrarse</a>
+            <a class="nav-link" routerLink="/registrar" routerLinkActive="active">Registrarse</a>
           </li>
           <li id="solicitudes" class="nav-item" [hidden]="ranking">
-            <a class="nav-link" routerLink="/rank" routerLinkActive="active"><i class="fas fa-clipboard"></i> Ranking Bancario </a>
+            <a class="nav-link" routerLink="/home" routerLinkActive="active"><i class="fas fa-clipboard"></i> Ranking Bancario </a>
           </li>
-          <li id="bitacora" class="nav-item" [hidden]="grafico">
+          <li id="grafico" class="nav-item" [hidden]="grafico">
             <a class="nav-link" routerLink="/grafico" routerLinkActive="active"><i class="fas fa-file-alt"></i> Grafico Ranking Bancario </a>
+          </li>
+          <li id="carga" class="nav-item" [hidden]="grafico">
+            <a class="nav-link" (click)='cargar()' routerLinkActive="active"><i class="fas fa-file-upload"></i> Carga Masiva </a>
           </li>
           <li id="cerrarSesion" class="nav-item" [hidden]="cerrar">
             <a class="nav-link" (click)='cerrarSesion()' routerLinkActive="active">Exit</a>

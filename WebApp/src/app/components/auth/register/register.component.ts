@@ -40,6 +40,8 @@ export class RegisterComponent implements OnInit {
 
     this.userService.registrarUsuario(this.user).subscribe(
       res =>{
+        console.log(res);
+        
         Swal.fire({
           title: 'Success',
           text: this.user.user + ' creado correctamente',
@@ -49,6 +51,8 @@ export class RegisterComponent implements OnInit {
 
       },
       err =>{
+
+        console.log(err);
 
         Swal.fire({
           title: 'Oops!',

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-navbar',
@@ -49,6 +51,15 @@ export class NavbarComponent implements OnInit {
     this.grafico = true;
     localStorage.clear();
     location.replace('/');
+  }
+
+  cargar(){
+    Swal.fire({
+      title: 'Success',
+      text: 'Carga exitosa',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
   }
 
 }
