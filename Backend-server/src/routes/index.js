@@ -11,7 +11,7 @@ router.use(bodyParser.urlencoded({ limit: '100mb', extended: true }))
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: '34.125.57.253',
+    host: '34.125.238.149',
     user: 'root',
     password: 'password',
     database: 'Bases2_ProyectoClase',
