@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
     password: 'password',
     database: 'Bases2_ProyectoClase',
     port: 33061
-});
+}); 
 
 router.get('/hola', 
     (req,res) => res.json
